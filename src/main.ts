@@ -23,10 +23,10 @@ async function bootstrap() {
   app.enableCors();
   await app.init();
 }
-// const PORT = 5000;
-// server.listen(PORT, () => {
-//   console.log(`🚀 Running on http://localhost:${PORT}`);
-// });
+const PORT = 5000;
+server.listen(PORT, () => {
+  console.log(`🚀 Running on http://localhost:${PORT}`);
+});
 
 const ready = bootstrap();
 
